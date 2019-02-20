@@ -50,6 +50,8 @@ while True:
             if e.key == pygame.K_RIGHT:
                 if (sx < 30):
                     sx += 1
+            if e.key == pygame.K_q:
+                quit()
             if mode == "edit":
                 if (e.key == pygame.K_1):
                     d["map"]["cells"][sx * 31 + sy]["isWall"] = not(
